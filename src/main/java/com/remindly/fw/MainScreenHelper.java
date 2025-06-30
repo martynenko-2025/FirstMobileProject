@@ -27,12 +27,12 @@ public class MainScreenHelper extends BaseHelper{
 
 
     public boolean isLicensesTextPresent() {
-        return isElementPresent(By.id("licenses_text_view"));
+        return isElementPresent(By.xpath("//android.widget.TextView[@text=\"Licenses\"]"));
     }
 
     public void tapOnLicenses() {
         tap(By.xpath("//android.widget.ImageView[@content-desc=\"More options\"]"));
-        tap(By.id("title"));
+        tap(By.xpath("//android.widget.LinearLayout"));
     }
 
     public String isReminderDatePresent() {
@@ -43,4 +43,5 @@ public class MainScreenHelper extends BaseHelper{
     public String isRepeatOffPresent() {
         return isTextPresent(By.id("recycle_repeat_info"));
     }
+
 }

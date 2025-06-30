@@ -1,5 +1,6 @@
 package com.remindly.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,7 @@ public class MainScreenTests extends TestBase{
     @Test
     public void licenses(){
         app.getMainScreen().tapOnLicenses();
-        Assert.assertTrue(app.getMainScreen().isLicensesTextPresent());
+        Assert.assertTrue(app.getMainScreen().isLicensesTextPresent().contains("Licenses"));
+
     }
 }

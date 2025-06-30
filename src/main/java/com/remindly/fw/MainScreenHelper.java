@@ -26,7 +26,7 @@ public class MainScreenHelper extends BaseHelper{
     }
 
 
-    public boolean isLicensesTextPresent() {
+    public String isLicensesTextPresent() {
         return isElementPresent(By.xpath("//android.widget.TextView[@text=\"Licenses\"]"));
     }
 

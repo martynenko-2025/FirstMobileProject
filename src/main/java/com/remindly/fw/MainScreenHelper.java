@@ -26,8 +26,8 @@ public class MainScreenHelper extends BaseHelper{
     }
 
 
-    public String isLicensesTextPresent() {
-        return isElementPresent(By.xpath("//android.widget.TextView[@text=\"Licenses\"]"));
+    public String getLicensesText() {
+        return driver.findElement(By.xpath("//android.widget.TextView[@text='Licenses']")).getText();
     }
 
     public void tapOnLicenses() {

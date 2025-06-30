@@ -14,7 +14,7 @@ public class MainScreenTests extends TestBase{
     @Test
     public void licenses(){
         app.getMainScreen().tapOnLicenses();
-        Assert.assertTrue(app.getMainScreen().isLicensesTextPresent().contains("Licenses"));
+        Assert.assertTrue(app.getMainScreen().getLicensesText().contains("Licenses"));
 
     }
 }

@@ -64,6 +64,5 @@ public class ReminderTests extends TestBase{
         app.getReminder().saveReminder();
 
         Assert.assertTrue(app.getMainScreen().isRepeatOffPresent().contains("5"));
-
     }
 }

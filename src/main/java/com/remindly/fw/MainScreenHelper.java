@@ -34,4 +34,13 @@ public class MainScreenHelper extends BaseHelper{
         tap(By.xpath("//android.widget.ImageView[@content-desc=\"More options\"]"));
         tap(By.id("title"));
     }
+
+    public String isReminderDatePresent() {
+        return isTextPresent(By.id("recycle_date_time"));
+    }
+
+
+    public String isRepeatOffPresent() {
+        return isTextPresent(By.id("recycle_repeat_info"));
+    }
 }
